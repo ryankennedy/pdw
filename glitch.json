@@ -1,0 +1,18 @@
+{
+  "install": "mvn -DskipTests dependency:resolve-plugins dependency:go-offline",
+  "start": "mvn -o -DskipTests compile exec:java",
+  "watch": {
+    "install": {
+      "include": [
+        "pom.xml"
+      ]
+    },
+    "restart": {
+      "include": [
+        "\\.txt$",
+        "\\.java$",
+        "\\.yaml$"
+      ]
+    }
+  }
+}
