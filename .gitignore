@@ -1,0 +1,9 @@
+# Maven build artifacts
+target/
+
+# Maven local repository
+.m2/repository
+
+# IntelliJ project files
+.idea/
+*.iml
