@@ -1,6 +1,6 @@
 {
   "install": "mvn -DskipTests dependency:resolve-plugins dependency:go-offline",
-  "start": "mvn -o -DskipTests compile exec:java",
+  "start": "mvn -DskipTests compile exec:java",
   "watch": {
     "install": {
       "include": [
