@@ -19,10 +19,8 @@ public class PersonalDataWarehouseApplication extends Application<PersonalDataWa
 
     @Override
     public void initialize(Bootstrap<PersonalDataWarehouseConfiguration> bootstrap) {
-        bootstrap.setConfigurationSourceProvider(new ResourceConfigurationSourceProvider());
-
         bootstrap.setConfigurationSourceProvider(new SubstitutingSourceProvider(
-                bootstrap.getConfigurationSourceProvider(),
+                new ResourceConfigurationSourceProvider(),
                 new EnvironmentVariableSubstitutor(false)));
     }
 
